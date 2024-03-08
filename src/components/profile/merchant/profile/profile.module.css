@@ -1,0 +1,78 @@
+.profile>h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+@media only screen and (min-width: 843px) {
+    .profile>h3 {
+        font-size: 28px;
+    }
+}
+
+.profile>button {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px 0;
+}
+
+.profile button:hover {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.dark .profile button:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.profile>li {
+    background-color: #fff;
+    color: #E90404;
+}
+
+.primaryBtn {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px 0;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-5px);
+    background-color: transparent;
+    color: #E90404;
+}
+
+.ReviewBtn {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    background: transparent;
+    color: #ecad18;
+    /* border: 2px solid #52e8b6; */
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    margin: 40px 10px;
+}

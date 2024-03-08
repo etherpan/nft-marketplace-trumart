@@ -1,0 +1,270 @@
+.darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    width: 50vw;
+    height: 500px;
+    background: white;
+    color: white;
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    overflow: auto;
+}
+
+.modalHeader {
+    /* height: 50px; */
+    background: white;
+    overflow: hidden;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.heading {
+    margin: 0;
+    padding: 10px;
+    color: #2c3e50;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
+.modalContent {
+    padding: 10px;
+    font-size: 14px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.modalActions {
+    /* position: absolute; */
+    bottom: 2px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.actionsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.closeBtn {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    color: #2c3e50;
+    background: white;
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-self: flex-end;
+    margin-top: -7px;
+    margin-right: -7px;
+}
+
+.closeBtn:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    transform: translate(-4px, 4px);
+}
+
+.deleteBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #fff;
+    background: #ff3e4e;
+    transition: all 0.25s ease;
+}
+
+.deleteBtn:hover {
+    box-shadow: 0 10px 20px -10px rgba(255, 62, 78, 0.6);
+    transform: translateY(-5px);
+    background: #ff3e4e;
+}
+
+.cancelBtn {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 28px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: none;
+    color: #2c3e50;
+    background: #fcfcfc;
+    transition: all 0.25s ease;
+}
+
+.cancelBtn:hover {
+    box-shadow: none;
+    transform: none;
+    background: whitesmoke;
+}
+
+.form {
+    margin-top: 40px;
+    /* overflow: auto; */
+}
+
+.form h3 {
+    color: #E90404;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.form {
+    /* max-width: 450px; */
+    margin: 30px auto;
+}
+
+.form label,
+.form label input {
+    display: block;
+}
+
+.form label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.50);
+    margin-bottom: 20px;
+}
+
+.form label input {
+    margin-top: 8px;
+    border-radius: 10px;
+    border: 1px solid #dbdbdb;
+    background: #f9cddaa3;
+    width: 100%;
+    height: 41px;
+    padding-left: 5px;
+}
+
+.form label input:focus-visible {
+    outline: none;
+    background-color: aliceblue;
+}
+
+.form span {
+    display: block;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 15px;
+    color: rgba(68, 70, 86, 0.50);
+}
+
+.form button {
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 10px;
+    background: #E90404;
+    color: #fff;
+    border: 2px solid #E90404;
+    transition: all 0.8s;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 40px 0;
+}
+
+.form button:hover {
+    background-color: transparent;
+    color: #E90404;
+}
+
+.upload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.upload input {
+    background: transparent !important;
+}
+
+.upload img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 500px;
+}
+
+.dark p {
+    color: #fff;
+}
+
+.dark .form label {
+    color: rgba(255, 255, 255, 0.50);
+}
+
+.dark .form label input {
+    color: #fff;
+    background: transparent;
+}
+
+.dark .form span {
+    color: rgba(225, 226, 233, 0.5);
+}
+
+.upload input {
+    border: none !important;
+}
+
+@media only screen and (min-width: 700px) {
+    .login h3 {
+        font-size: 45px;
+        margin: 15px 0 0 0;
+        line-height: 56px;
+    }
+    .form label input {
+        width: 100%;
+    }
+    .form {
+        margin-top: 40px;
+    }
+    .form {
+        margin: 16px;
+    }
+}
+
+input[type="date"] {
+    display: inline-block;
+    position: relative;
+}
+
+.input-error {
+    border-color: #E90404;
+}
